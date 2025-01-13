@@ -17,16 +17,29 @@
 <!-- 
     - Tạo 1 git init để lưu trữ : 
     git init
-
     - Đưa thư mục qua Staging Area : 
     git add + tên file : 1 file 
     git add . : toàn bộ file
-
     - Từ Staging Area sang Commit :
     git commit -m 'Nội dung commit'
-
     - Để kiểm tra trạng thái :
     git status
+    - Để quay trở lại trạng thái thư mục đang làm việc :
+    git restore --staged (tên file)
+
+    * push
+    - kết nối vs git : 
+    git remote add origin https://github.com/sangct257/git-tutorial.git
+    - kết nối với branch trong link git :
+    git branch -M main
+    - upload file lên link git vừa kết nối :
+    git push -u origin main
+
+    *branch
+    - kiểm tra branch :
+    git branch
+    - tạo branch :
+    git checkout -b 'tên branch'
 -->
 <!-- 
     Thư mục đang làm việc       Staging Area        Commit  
@@ -35,5 +48,4 @@
                                                     index2.css
     B1 : Tạo git init           git add             git commit -m 'Nội dung'
     B2 : Tạo file
-
 -->
