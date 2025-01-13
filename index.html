@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <p>This is App</p>
+    <p>This is NEW App</p>
     <button>SUBMIT</button>
 </body>
 
@@ -17,29 +17,37 @@
 <!-- 
     - Tạo 1 git init để lưu trữ : 
     git init
+
     - Đưa thư mục qua Staging Area : 
     git add + tên file : 1 file 
     git add . : toàn bộ file
+
     - Từ Staging Area sang Commit :
     git commit -m 'Nội dung commit'
-    - Để kiểm tra trạng thái :
-    git status
-    - Để quay trở lại trạng thái thư mục đang làm việc :
+
+    - Quay trở lại thư mục đang làm việc
     git restore --staged (tên file)
 
-    * push
-    - kết nối vs git : 
+    - Để kiểm tra trạng thái :
+    git status
+
+    - Để kiểm tra lịch sử commit :
+    git log
+
+    - kết nối với github :
     git remote add origin https://github.com/sangct257/git-tutorial.git
-    - kết nối với branch trong link git :
     git branch -M main
-    - upload file lên link git vừa kết nối :
-    git push -u origin main
+    - git push -u origin main - ( nếu đã kết nối link và branch rồi chỉ cần push sau khi commit )
 
     *branch
-    - kiểm tra branch :
+    - kiểm tra branch
     git branch
-    - tạo branch :
-    git checkout -b 'tên branch'
+    - tạo branch
+    git checkout -b (tên branch mới)
+        ở đây các commit trước sẽ tự động thêm vào branch mới nhất
+    - chuyển hướng branch
+    git checkout (tên branch)
+    tương tự với các commit nhưng phải lấy id duy nhất
 -->
 <!-- 
     Thư mục đang làm việc       Staging Area        Commit  
@@ -48,4 +56,16 @@
                                                     index2.css
     B1 : Tạo git init           git add             git commit -m 'Nội dung'
     B2 : Tạo file
+
+*main 
+    update all files
+    update index.html file
+    add css files
+    add index.html file
+*body-style
+    updated body-style
+    update all files
+    update index.html file
+    add css files
+    add index.html file
 -->
